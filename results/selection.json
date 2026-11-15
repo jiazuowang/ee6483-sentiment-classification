@@ -1,0 +1,5 @@
+{
+  "selected_model": "SVM_word_char_balanced_C0.25",
+  "criterion": "mean development 3-fold grouped CV macro F1; accuracy tie-break",
+  "holdout_used_for_selection": false
+}

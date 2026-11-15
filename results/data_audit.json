@@ -1,0 +1,31 @@
+{
+  "train_rows": 7401,
+  "test_rows": 1851,
+  "train_class_counts": {
+    "1": 6319,
+    "0": 1082
+  },
+  "empty_train": 0,
+  "empty_test": 0,
+  "exact_duplicate_train_rows": 216,
+  "normalized_duplicate_train_rows": 219,
+  "conflicting_label_groups": 0,
+  "test_overlap_with_train_rows": 101,
+  "development_rows": 5921,
+  "holdout_rows": 1480,
+  "development_counts": {
+    "1": 5055,
+    "0": 866
+  },
+  "holdout_counts": {
+    "1": 1264,
+    "0": 216
+  },
+  "review_word_length_quantiles": {
+    "0.0": 4.0,
+    "0.5": 42.0,
+    "0.9": 108.0,
+    "0.99": 269.0,
+    "1.0": 1066.0
+  }
+}
