@@ -1,0 +1,23 @@
+# Keep course data and data-derived text local.
+data/*
+!data/README.md
+submission*.csv
+*.joblib
+*.pkl
+*.pickle
+*.pdf
+*.zip
+environment-explicit.txt
+results/holdout_predictions.csv
+results/split_assignments.csv
+results/feature_weights.csv
+results/warnings.json
+figures/
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
