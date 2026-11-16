@@ -4,7 +4,7 @@ An EE6483 course-project implementation comparing sparse linear models and a com
 
 **19 configurations · grouped cross-validation · class imbalance · feature and resource comparisons**
 
-The selected class-weighted SVM achieved **91.42% accuracy** and **0.8357 macro F1** on a separate, labelled holdout of 1,480 reviews. These are recorded course-experiment results, not official test-set or leaderboard scores.
+The selected class-weighted SVM achieved **91.42% accuracy** and **0.8357 macro F1** on a separate, labelled holdout of 1,480 reviews.
 
 ## My implementation
 
@@ -68,7 +68,6 @@ The confidence interval resamples normalized-text groups. It does not capture mo
 - Negative-class F1 is substantially below positive-class F1. Accuracy alone would hide this gap.
 - Grouping blocks normalized exact duplicates, but cannot rule out near duplicates or shared products/authors because those IDs are absent.
 - The MLP's internal early-stopping split is not group-aware and occurs after feature fitting. External CV and holdout partitions remain separate; the neural baseline has this additional limitation.
-- No Transformer model, hotel-domain adaptation, or noisy-label learning method was trained in this implementation.
 
 Additional records: [resource comparison](results/resource_comparison.csv), [MLP seed sensitivity](results/mlp_seed_results.csv), [aggregate data audit](results/data_audit.json).
 
@@ -97,6 +96,6 @@ This smoke check does not reproduce the course scores. The supplied numerical re
 
 ## Data and attribution
 
-The instructor-provided dataset is not an original dataset created by this repository's author. Raw reviews, submission files, row-level predictions, fitted vocabularies/models, and the original group report are excluded. This repository includes implementation code and aggregate experimental records, with no redistribution license granted for the course data.
+The course instructor supplied the dataset. This repository includes implementation code and aggregate experimental records. Raw reviews, submission files, row-level predictions, fitted vocabularies/models and the original group report are excluded. Course data remains subject to its original access and reuse conditions.
 
-The classifiers and feature extraction use scikit-learn. The work here concerns pipeline implementation and experimental comparison, not invention of the underlying SVM, TF-IDF, or MLP algorithms.
+Classifiers and feature extraction use [scikit-learn](https://scikit-learn.org/). My work covers pipeline implementation and experimental comparison.
